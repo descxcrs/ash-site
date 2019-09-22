@@ -17,8 +17,15 @@ body {
   flex: 1 200px;
 }
 #profileImg {
+  width: 10em;
+}
+#profileImgContainer {
+  display: inline-block;
+  position: relative;
   width: 150px;
   height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
 }
 #links {
   padding: 1em;
