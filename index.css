@@ -4,6 +4,12 @@ body {
   background-color: #333959;
   margin: 0;
 }
+
+body.thoughts {
+  background: white;
+  color: rgba(19, 18, 18, 0.5);
+}
+
 #container {
   display: flex;
   flex-flow: row wrap;
@@ -27,6 +33,21 @@ body {
   overflow: hidden;
   border-radius: 50%;
 }
+
+.thoughts #profileImgContainer,
+.thoughts .medium-widget-article__image img {
+  box-shadow: 5px 5px 17px rgb(204, 202, 202);
+}
+
+#info .p1 {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+#info p {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
 #links {
   padding: 1em;
   letter-spacing: 0.5em;
@@ -35,11 +56,21 @@ body {
 #links a {
   color: rgba(255, 255, 255, 0.5);
 }
+
+.thoughts #links a {
+  color: rgba(73, 70, 70, 0.5);
+}
+
 #links a:hover {
   color: rgba(255, 255, 255, 1);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
+.thoughts #links a:hover {
+  color: rgb(43, 43, 44);
+}
+
 #right {
   flex: 2 200px;
   /* BORDER */
@@ -50,6 +81,11 @@ body {
   margin-left: 20px;
   position: relative;
 }
+
+.thoughts #right {
+  border: none;
+}
+
 #right ul,
 p {
   line-height: 2em;
@@ -84,6 +120,7 @@ p {
   margin: 0;
   padding: 20px 0;
   background-color: #2b304c;
+  color: white;
 }
 #navbar a {
   color: white;
@@ -96,6 +133,14 @@ p {
 #navbar #link2 {
   color: rgba(255, 255, 255, 0.5);
 }
+.thoughts #navbar #link1 {
+  color: rgba(255, 255, 255, 0.5);
+}
+.thoughts #navbar #link2 {
+  color: white;
+}
+
+#navbar #link1:hover,
 #navbar #link2:hover {
   color: rgba(255, 255, 255, 1);
   -webkit-transition: 0.5s;
@@ -187,4 +232,17 @@ p {
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+}
+
+#medium-widget {
+  width: 80%;
+}
+
+.thoughts #right a {
+  color: #333959;
+  border-bottom: none;
+  font-size: 1.3em;
+}
+.thoughts #right .medium-widget-article__item {
+  font-size: 1.1em;
 }
